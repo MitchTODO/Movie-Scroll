@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/savePlease"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewMovieImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="@color/colorAccent"
+        android:saveEnabled="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearForButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/recyclerviewMovieImage"
+        android:background="@color/colorAccentdim"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/action_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genres"
+            android:onClick="toolBarButton" />
+
+        <Button
+            android:id="@+id/action_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_button"
+            android:onClick="toolBarButton"/>
+
+        <Button
+            android:id="@+id/action_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_year"
+            android:onClick="toolBarButton"/>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/showProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/RatingBar"
+        android:visibility="gone"
+        />
+
+    <HorizontalScrollView
+        android:id= "@+id/horizontalYears"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalGenres"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/shapeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id= "@+id/horizontalSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/horizontalYears">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/shapeForSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id= "@+id/horizontalGenres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/shapeForGenres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

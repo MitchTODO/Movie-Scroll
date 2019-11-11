@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:id="@+id/posterBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/saveToFav"
+        android:layout_alignRight="@id/posterBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:onClick="saveToFav"
+        android:background="@android:color/transparent"
+        />
+
+
+        <TextView
+            android:id="@+id/movieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/duskYellow"
+            android:textSize="30sp"
+            android:gravity="left"
+            android:padding="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="2.3"
+            android:shadowRadius="7.6"
+            />
+
+
+
+
+    <ScrollView
+    android:id="@+id/showDetails"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lineargradient">
+
+
+
+        <LinearLayout
+            android:id="@+id/movieInfoHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/mainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/yearSearchWithoutTrans"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:textSize="40sp"
+                android:alpha="0.93"/>
+
+            <Button
+                android:id="@+id/buttonViewForTrailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yearSearchWithoutTrans"
+                android:padding="10dp"
+                android:text="@string/trailer"
+                android:textSize="20sp"
+                android:background="@drawable/best_button"
+                android:alpha="1.0"
+                android:onClick="displayView"
+                android:outlineSpotShadowColor="@color/yearSearchWithoutTrans"
+                android:outlineProvider="background"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/horizontalForVideoPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/RatingBar"
+                    android:background="@color/yearSearchWithoutTrans"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yearSearchWithoutTrans">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/shapeForVideoPreview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center">
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonViewForOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yearSearchWithoutTrans"
+                android:padding="10dp"
+                android:text="@string/description"
+                android:textSize="20sp"
+                android:background="@drawable/best_button"
+                android:alpha="1.0"
+                android:onClick="displayView"
+                android:outlineSpotShadowColor="@color/yearSearchWithoutTrans"
+                android:outlineProvider="background"/>
+
+            <TextView
+                android:id="@+id/overView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/colorBackScroll"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:background="@color/yearSearchWithoutTrans"
+                android:alpha="1.0"
+                android:visibility="gone"
+               />
+
+            <Button
+                android:id="@+id/buttonViewForGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yearSearchWithoutTrans"
+                android:padding="10dp"
+                android:text="@string/genres"
+                android:textSize="20sp"
+                android:background="@drawable/best_button"
+                android:alpha="1.0"
+                android:onClick="displayView"
+                android:outlineSpotShadowColor="@color/yearSearchWithoutTrans"
+                android:outlineProvider="background"/>
+
+            <TextView
+                android:id="@+id/genre_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/colorBackScroll"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:background="@color/yearSearchWithoutTrans"
+                android:alpha="1.0"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:id="@+id/buttonViewForSimilarTitles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yearSearchWithoutTrans"
+                android:padding="10dp"
+                android:text="@string/similarTitles"
+                android:textSize="20sp"
+                android:background="@drawable/best_button"
+                android:alpha="1.0"
+                android:onClick="displayView"
+                android:outlineSpotShadowColor="@color/yearSearchWithoutTrans"
+                android:outlineProvider="background"/>
+
+            <RelativeLayout
+                android:id= "@+id/horizontalForSimilarTitles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/RatingBar"
+                    android:background="@color/yearSearchWithoutTrans" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yearSearchWithoutTrans">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/shapeForTitles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center">
+
+                       </LinearLayout>
+                    </RelativeLayout>
+
+                 </HorizontalScrollView>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonViewForReleaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yearSearchWithoutTrans"
+                android:padding="10dp"
+                android:text="@string/releaseDate"
+                android:textSize="20sp"
+                android:background="@drawable/best_button"
+                android:alpha="1.0"
+                android:onClick="displayView"
+                android:outlineSpotShadowColor="@color/yearSearchWithoutTrans"
+                android:outlineProvider="background"/>
+
+            <TextView
+                android:id="@+id/release_Date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBackScroll"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:background="@color/yearSearchWithoutTrans"
+                android:alpha="1.0"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/buttonViewForRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yearSearchWithoutTrans"
+                android:padding="10dp"
+                android:text="@string/rating"
+                android:textSize="20sp"
+                android:background="@drawable/best_button"
+                android:alpha="1.0"
+                android:onClick="displayView"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/reviewsAndRating"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/progressForReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/RatingBar"
+                        android:background="@color/yearSearchWithoutTrans"/>
+
+                <LinearLayout
+                    android:id="@+id/movieRatingAndReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

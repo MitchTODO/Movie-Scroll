@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2284B1</color>
+    <color name="colorPrimaryDark">#215FAA</color>
+    <color name="colorAccent">#062E3F</color>
+    <color name="colorAccentdim">#00062E3F</color>
+    <color name="yearSearch">#C44F8AFF</color>
+    <color name="yearSearchWithoutTrans">#4FCBFF</color>
+    <color name="genreSearch">#C475FF4F</color>
+    <color name="sortSearch">#C4FFED4F</color>
+    <color name="languageSearch">#C4FC3030</color>
+    <color name="colorBackScroll">#E9012838</color>
+    <color name="colorDefaultSpinner">#CDCFCF</color>
+    <color name="duskYellow">#F3AC20</color>
+    <color name="colorRating">#48062E3F</color>
+</resources>
+

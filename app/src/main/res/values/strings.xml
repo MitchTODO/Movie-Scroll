@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Movie Scroll</string>
+    <string name="sort_button">Sort</string>
+    <string name="search_year">Year</string>
+    <string name="genres">Genres</string>
+    <string name="lauguage">Movie Language</string>
+    <string name="region">Movie Region</string>
+    <string name="title_activity_movie_detail">movieDetailActivity</string>
+    <string name="description">Description</string>
+    <string name="rating">Reviews</string>
+    <string name="releaseDate">Release Date</string>
+    <string name="trailer">Trailer</string>
+    <string name="similarTitles">Similar Movies</string>
+    <string name="error_network">" \uD83E\uDD14 Check your Internet Connection"</string>
+    <string name="error_trailer">"Sorry, no trailers."</string>
+    <string name="error_reviews">"Sorry, no reviews."</string>
+    <string name="error_similar">"Sorry, no similar movies."</string>
+
+
+</resources>
