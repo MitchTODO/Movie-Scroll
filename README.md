@@ -2,7 +2,7 @@
 
 Description : Android app that allows the user to discover movies, within TheMovieDataBase.org.
 
-![alt text](/readmePic/Screenshot_20191108-191748_Movie Scroll.jpg)
+![alt text](/readmePic/Screenshot_20191108-191748_Movie%20Scroll.jpg)
 
 ## Activitys
 
