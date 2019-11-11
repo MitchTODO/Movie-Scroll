@@ -2,6 +2,8 @@
 
 Description : Android app that allows the user to discover movies, within TheMovieDataBase.org.
 
+![alt text](/Screenshot_2019-11-08-20-29-48.png)
+
 ## Activitys
 
 App consist of two views.
