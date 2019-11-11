@@ -1,7 +1,5 @@
 # Movie Scroll (Popular Movies) a Udacity Project
 
-NOTE: PLEASE DONT COPY AND PUBLISH THIS APP
-
 Description : Android app that allows the user to discover movies, within TheMovieDataBase.org.
 
 ## Activitys
