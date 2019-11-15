@@ -33,7 +33,7 @@ public class NetworkUtils {
                 .appendPath("3")
                 .appendPath("discover")
                 .appendPath("movie")
-                .appendQueryParameter("api_key", "e2737ecf02fc50bceb04450bbb78af0c")
+                .appendQueryParameter("api_key", "YOUR KEY HERE")
                 .appendQueryParameter("language",language)
                 .appendQueryParameter("sort_by",sort_by)
                 .appendQueryParameter("include_adult", "false")
@@ -81,7 +81,7 @@ public class NetworkUtils {
                 .appendPath("movie")
                 .appendPath(movieID)
                 .appendPath("videos")
-                .appendQueryParameter("api_key","e2737ecf02fc50bceb04450bbb78af0c")
+                .appendQueryParameter("api_key","YOUR KEY HERE")
                 .appendQueryParameter("language", language);
         url = builder.build().toString();
         return url;
@@ -102,7 +102,7 @@ public class NetworkUtils {
                 .appendPath("movie")
                 .appendPath(movieID)
                 .appendPath("reviews")
-                .appendQueryParameter("api_key","e2737ecf02fc50bceb04450bbb78af0c")
+                .appendQueryParameter("api_key","YOUR KEY HERE")
                 .appendQueryParameter("language", language);
         url = builder.build().toString();
         return url;
@@ -123,7 +123,7 @@ public class NetworkUtils {
                 .appendPath("movie")
                 .appendPath(movieID)
                 .appendPath("similar")
-                .appendQueryParameter("api_key","e2737ecf02fc50bceb04450bbb78af0c")
+                .appendQueryParameter("api_key","YOUR KEY HERE")
                 .appendQueryParameter("language",language);
         url = builder.build().toString();
         return url;
@@ -169,7 +169,7 @@ public class NetworkUtils {
                 .appendPath("movie")
                 .appendPath(movieID)
                 .appendPath("reviews")
-                .appendQueryParameter("api_key","e2737ecf02fc50bceb04450bbb78af0c")
+                .appendQueryParameter("api_key","YOUR KEY HERE")
                 .appendQueryParameter("language", language)
                 .appendQueryParameter("page",page);
         url = builder.build().toString();
